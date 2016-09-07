@@ -17,7 +17,6 @@ class Lesson1 {
 
     }
 
-
     static void main(String[] args){
         GetInputString()
     }

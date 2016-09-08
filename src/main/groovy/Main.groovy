@@ -1,13 +1,11 @@
 import tutorial.lesson2.Lesson2
 
-class Tutorials {
+class Main {
 
 
     static void main(String[] args){
 
         def lesson2 = new Lesson2()
-        lesson2.getInput()
-        lesson2.setLength()
-        lesson2.printLength()
+        lesson2.Run()
     }
 }

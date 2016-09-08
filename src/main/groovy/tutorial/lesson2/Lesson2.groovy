@@ -26,6 +26,6 @@ class Lesson2 {
     }
 
     void printLength(){
-        ProcessStrings.printLength(inputString)
+        println(inputString + ' has ' + inputStringLength + ' characters')
     }
 }

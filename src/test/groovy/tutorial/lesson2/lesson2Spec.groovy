@@ -6,7 +6,7 @@ class lesson2Spec extends Specification {
 
     def "Returns the correct number of characters for passed string"(){
         given:
-            def lesson2 = new lesson2()
+            def lesson2 = new Lesson2()
             lesson2.inputString = "Liverpool"
 
         when:

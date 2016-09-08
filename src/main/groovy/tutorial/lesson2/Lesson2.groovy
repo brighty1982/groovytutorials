@@ -1,6 +1,6 @@
 package tutorial.lesson2
 
-class lesson2 {
+class Lesson2 {
 
     def inputString = ''
     def inputStringLength = 0
@@ -26,6 +26,6 @@ class lesson2 {
     }
 
     void printLength(){
-        print(inputString + ' has ' + inputStringLength + ' characters')
+        ProcessStrings.printLength(inputString)
     }
 }

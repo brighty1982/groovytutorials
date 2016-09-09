@@ -1,3 +1,5 @@
+package tutorial.main
+
 import tutorial.lesson2.Lesson2
 
 class Main {

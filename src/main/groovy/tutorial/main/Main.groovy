@@ -6,7 +6,14 @@ class Main {
 
     static void main(String[] args){
 
-        def lesson2 = new Lesson2()
-        lesson2.Run()
+        switch(args[0]){
+            case("2"):
+                def lesson2 = new Lesson2()
+                lesson2.Run()
+                break
+            default:
+                println("Please pass a lesson number to run...")
+        }
+
     }
 }

@@ -1,6 +1,7 @@
 package tutorial.main
 
 import tutorial.lesson2.Lesson2
+import tutorial.lesson47.Lesson47
 
 class Main {
 
@@ -8,8 +9,12 @@ class Main {
 
         switch(args[0]){
             case("2"):
-                def lesson2 = new Lesson2()
-                lesson2.Run()
+                LessonInterface lesson = new Lesson2()
+                println(lesson.getLessonName())
+                lesson.run()
+                break
+            case("47"):
+                LessonInterface lesson = new Lesson47().run()
                 break
             default:
                 println("Please pass a lesson number to run...")

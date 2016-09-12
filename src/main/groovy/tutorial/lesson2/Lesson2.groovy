@@ -1,8 +1,10 @@
 package tutorial.lesson2
 
-class Lesson2 {
+import tutorial.main.LessonInterface
 
-    static void Run(){
+class Lesson2 implements LessonInterface{
+
+    void run(String[] args){
 
         String inputString = ''
 
@@ -17,6 +19,11 @@ class Lesson2 {
             }
         }
     }
+
+    public String getLessonName(){
+        return "Lesson 2: Basic I/O"
+    }
+
 }
 
 class StringLength {

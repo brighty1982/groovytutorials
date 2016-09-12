@@ -10,7 +10,10 @@ class Lesson47 implements LessonInterface {
 
     void run(String[] args) {
 
-        HttpRequest request = HttpRequest.get("http://api.open-notify.org/astros/")
+
+        def run = new Lesson47Application<>().run(defaulted(args))
+
+        /*HttpRequest request = HttpRequest.get("http://api.open-notify.org/astros/")
         HttpResponse response = request.send()
 
         if(response.statusCode() == 200){
@@ -38,12 +41,16 @@ class Lesson47 implements LessonInterface {
         }
 
 
-        response.close()
+        response.close()*/
 
     }
 
     public String getLessonName(){
         return "Lesson 47: Who's in space"
+    }
+
+    private static String[] defaulted(String[] args) {
+        args ? args : ['server'].toArray()
     }
 
 }

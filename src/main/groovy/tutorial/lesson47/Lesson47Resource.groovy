@@ -19,7 +19,13 @@ class Lesson47Resource {
     {
         HttpRequest httpRequest = HttpRequest.get('http://api.open-notify.org/astros.json')
         HttpResponse response = httpRequest.send()
-        response.body()
+
+        if(response.statusCode() == 200){
+            response.body()
+        }else{
+            "Status: " + response.statusCode()
+        }
+
     }
 
 }

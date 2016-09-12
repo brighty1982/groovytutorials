@@ -12,6 +12,7 @@ repositories {
 dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.4.7'
     compile 'org.codehaus.groovy.modules.http-builder:http-builder:0.7.1'
+    compile 'org.jodd:jodd-http:3.7.1'
     testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
 }
 

@@ -9,7 +9,7 @@ class Lesson2 implements LessonInterface{
         String inputString = ''
 
         while(inputString == ''){
-            println('Lesson 2: What is the input string?')
+            println('What is the input string?')
             inputString = System.in.newReader().readLine()
             if(inputString == ''){
                 println('You must enter a value.')
@@ -21,7 +21,7 @@ class Lesson2 implements LessonInterface{
     }
 
     public String getLessonName(){
-        return "Lesson 2: Basic I/O"
+        return "Lesson 2: Counting the number of characters"
     }
 
 }

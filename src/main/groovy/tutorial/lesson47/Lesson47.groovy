@@ -10,7 +10,7 @@ class Lesson47 implements LessonInterface {
 
     void run(String[] args) {
 
-        def run = new Lesson47Application().run(args)
+        def run = new Lesson47Application().run(defaulted(args))
     }
 
     public String getLessonName(){

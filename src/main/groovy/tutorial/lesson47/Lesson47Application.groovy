@@ -9,6 +9,12 @@ import io.dropwizard.assets.AssetsBundle
 
 class Lesson47Application extends Application<Configuration> {
 
+
+    @Override
+    void initialize(Bootstrap<Configuration> bootstrap) {
+        bootstrap.addBundle(new AssetsBundle('/assets', '/ui', 'index.html'))
+    }
+
     @Override
     void run(Configuration configuration, Environment environment) throws Exception {
         environment.jersey().register(new Lesson47Resource())

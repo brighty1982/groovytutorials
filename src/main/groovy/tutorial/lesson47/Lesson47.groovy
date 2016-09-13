@@ -9,7 +9,8 @@ import tutorial.main.LessonInterface
 class Lesson47 implements LessonInterface {
 
     void run(String[] args) {
-        def run = new Lesson47Application<>().run(defaulted(args))
+
+        def run = new Lesson47Application().run(args)
     }
 
     public String getLessonName(){
